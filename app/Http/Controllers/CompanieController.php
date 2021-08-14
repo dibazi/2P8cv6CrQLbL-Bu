@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-use App\Models\Companie;
+use App\Models\companie;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Carbon;
@@ -20,7 +20,7 @@ class CompanieController extends Controller
         //
 
         return Inertia::render('Kaji/companies',
-        ['companies'=>Companie::when($request->term, function($query, $term){
+        ['companies'=>companie::when($request->term, function($query, $term){
             $query->where('companyName', 'LIKE', '%'.$term.'%', 'OR', 'country', 'LIKE', '%'.$term.'%');
             $query->where('country', 'LIKE', '%'.$term.'%', 'OR', 'country', 'LIKE', '%'.$term.'%');
             $query->where('province', 'LIKE', '%'.$term.'%', 'OR', 'country', 'LIKE', '%'.$term.'%');
@@ -94,7 +94,7 @@ class CompanieController extends Controller
 
             ]);
 */
-        $newJob = new Companie;
+        $newJob = new companie;
         $newJob->user_id = $request->job["user_id"];
         $newJob->companyName = $request->job["companyName"];
         $newJob->country = $request->job["country"];
@@ -150,7 +150,7 @@ class CompanieController extends Controller
     public function update(Request $request, Companie $job, $id)
     {
         //
-        $updatePost = Companie::find($id);
+        $updatePost = companie::find($id);
 
         if($updatePost){
             
@@ -176,7 +176,7 @@ class CompanieController extends Controller
     }
     public function search(Request $request ){
         return Inertia::render('Kaji/companies',
-        ['searchItems'=>Privee::when($request->term, function($query, $term){
+        ['searchItems'=>companie::when($request->term, function($query, $term){
             $query->where('country', 'LIKE', '%'.$term.'%', 'OR', 'country', 'LIKE', '%'.$term.'%');
             $query->where('province', 'LIKE', '%'.$term.'%', 'OR', 'country', 'LIKE', '%'.$term.'%');
             $query->where('city', 'LIKE', '%'.$term.'%', 'OR', 'country', 'LIKE', '%'.$term.'%');
