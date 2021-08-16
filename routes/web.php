@@ -44,7 +44,11 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/p/f', function () {
 })->name('priveeForm');
 
 //test purpose
-//Route::middleware(['auth:sanctum', 'verified'])->get('/test', [PriveeController::class, 'search'])->name('test');
+/*Route::middleware(['auth:sanctum', 'verified'])->get('/test', [PriveeController::class, 'search'])->name('test');
+Route::middleware(['auth:sanctum', 'verified'])->get('/t/f', function () {
+    return Inertia::render('Kaji/testForm');
+})->name('testForm');
+*/
 
 //get the object to update
 Route::middleware(['auth:sanctum', 'verified'])->get('/edit/{id}/p', [PriveeController::class, 'show'])->name('edit.privee');

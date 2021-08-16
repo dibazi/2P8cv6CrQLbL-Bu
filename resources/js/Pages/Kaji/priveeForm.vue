@@ -62,8 +62,7 @@
                                         <div><label for="" class="text-blue-700">Cree anonce comme companie, click <inertia-link class="text-green-500" href="/c/f">ici</inertia-link>.</label></div>
 
                                         <form @submit.prevent="addItem()" action="" class="flex flex-col space-y-4">
-
-                                            <div><label for="" class="text-blue-700">Information sur anonce</label></div>
+                                            <div><label for="" class="text-blue-700">Information sur le Particulier</label></div>
 
                                             
                                             <div class="contact-form-success alert alert-success mt-4" v-if="success">
@@ -151,7 +150,7 @@
                                             <div>
                                                 <label for="" class="text-sm">Date final</label>
                                                 
-                                                <datepicker :language="fr" format="MM-dd-YYYY" name="prive.dateFinal" id="prive.dateFinal" v-model="prive.dateFinal" required type="date" placeholder="Date final depot de candidature Exp. 21/02/2021" class="ring ring-gray-300 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-teal-300" />
+                                                <datepicker :language="fr" format="MM-dd-YYYY" name="prive.dateFinal" id="prive.dateFinal" v-model="prive.dateFinal" required type="text" placeholder="Date final depot de candidature Exp. 21/02/2021" class="ring ring-gray-300 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-teal-300" />
                                                 <div v-if="hasErrors('prive.dateFinal')">
                                                     <p class="text-red-700">Entrer Date final.</p> 
                                                 </div>

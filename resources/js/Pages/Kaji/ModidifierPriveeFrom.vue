@@ -67,7 +67,7 @@
 
                                             <div>
                                                 <label for="" class="text-sm">Pays </label>
-                                                <input name="prive.country" id="prive.country" v-model="prive.country" type="text" placeholder="Pays ou le post est disponible" required class="ring ring-gray-300 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-teal-300">
+                                                <input name="prive.country" id="prive.country" v-model="prive.country" type="text" placeholder="Pays ou le post est disponible" required class="ring ring-gray-300 text-green-500 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-teal-300">
                                                 <div v-if="hasErrors('prive.country')">
                                                     <p class="text-red-700">Entrer pays.</p> 
                                                 </div>
@@ -75,7 +75,7 @@
 
                                             <div>
                                                 <label for="" class="text-sm">Province/Region </label>
-                                                <input name="prive.province" id="prive.province" v-model="prive.province" type="text" placeholder="Province/Region ou le post est disponible" required class="ring ring-gray-300 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-teal-300">
+                                                <input name="prive.province" id="prive.province" v-model="prive.province" type="text" placeholder="Province/Region ou le post est disponible" required class="ring ring-gray-300 text-green-500 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-teal-300">
                                                 <div v-if="hasErrors('prive.province')">
                                                     <p class="text-red-700">Entrer Province.</p> 
                                                 </div>
@@ -84,7 +84,7 @@
                                             <div>
                                                 <label for="" class="text-sm">Ville </label>
 
-                                                <input name="prive.city" id="prive.city" v-model="prive.city" type="text" placeholder="Ville ou le post est disponible" required class="ring ring-gray-300 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-teal-300">
+                                                <input name="prive.city" id="prive.city" v-model="prive.city" type="text" placeholder="Ville ou le post est disponible" required class="ring ring-gray-300 text-green-500 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-teal-300">
                                                 <div v-if="hasErrors('prive.city')">
                                                     <p class="text-red-700">Entrer ville.</p> 
                                                 </div>
@@ -95,7 +95,7 @@
                                              <div>
                                                 <label for="" class="text-sm">Domaine/Categorie</label>
 
-                                                <input name="prive.domaine" id="prive.domaine" v-model="prive.domaine" type="text" placeholder="Ex. construction" required class="ring ring-gray-300 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-teal-300">
+                                                <input name="prive.domaine" id="prive.domaine" v-model="prive.domaine" type="text" placeholder="Ex. construction" required class="ring ring-gray-300 text-green-500 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-teal-300">
                                                 <div v-if="hasErrors('prive.domaine')">
                                                     <p class="text-red-700">Entrer domaine.</p> 
                                                 </div>
@@ -104,12 +104,12 @@
                                              <div>
                                                 <label for="" class="text-sm">Nom du post</label>
 
-                                                <input v-model="prive.position" type="text" placeholder="Ex. Chef de chantier" required class="ring ring-gray-300 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-teal-300">
+                                                <input v-model="prive.position" type="text" placeholder="Ex. Chef de chantier" required class="ring ring-gray-300 text-green-500 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-teal-300">
                                             </div>
 
                                             <div class="mt-4">
                                                 <label for="" class="text-sm">choisir devise</label>
-                                                <select name="prive.currency" id="prive.currency" v-model="prive.currency" required class="ring ring-gray-300 outline-none focus:ring-teal-300 block mt-1 w-full px-4 py-2 border-gray-300 rounded-md shadow-sm">
+                                                <select name="prive.currency" id="prive.currency" v-model="prive.currency" required class="ring ring-gray-300 text-green-500 outline-none focus:ring-teal-300 block mt-1 w-full px-4 py-2 border-gray-300 rounded-md shadow-sm">
                                                     <option value="FC">Franc congolais</option>
                                                     <option value="$">Dollor americain</option>
                                                 </select>
@@ -121,7 +121,7 @@
                                             <div>
                                                 <label for="" required class="text-sm">Salaire </label>
 
-                                                <input name="prive.salary" id="prive.salary" v-model="prive.salary" required type="text" placeholder="Salaire du post Exp. 200000" class="ring ring-gray-300 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-teal-300">
+                                                <input name="prive.salary" id="prive.salary" v-model="prive.salary" required type="text" placeholder="Salaire du post Exp. 200000" class="ring ring-gray-300 text-green-500 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-teal-300">
                                                 <div v-if="hasErrors('prive.salary')">
                                                     <p class="text-red-700">Entrer Salaire.</p> 
                                                 </div>
@@ -130,7 +130,7 @@
                                             <div>
                                                 <label for="" class="text-sm">Description</label>
 
-                                                <textarea v-model="prive.description" required name="prive.description" id="prive.description" rows="10" class="ring ring-gray-300 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-teal-300" placeholder="Description du post, responsabilite..."></textarea>
+                                                <textarea v-model="prive.description" required name="prive.description" id="prive.description" rows="10" class="ring ring-gray-300 text-green-500 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-teal-300" placeholder="Description du post, responsabilite..."></textarea>
                                                 <div v-if="hasErrors('prive.description')">
                                                     <p class="text-red-700">Entrer Description.</p> 
                                                 </div>
@@ -139,7 +139,7 @@
                                             <div>
                                                 <label for="" class="text-sm">Date final</label>
                                                 
-                                                <datepicker :language="fr" format="MM-dd-YYYY" name="prive.dateFinal" id="prive.dateFinal" v-model="prive.dateFinal" required type="text" placeholder="Date final depot de candidature Exp. 21/02/2021" class="ring ring-gray-300 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-teal-300" />
+                                                <datepicker :language="fr" format="MM-dd-YYYY" name="prive.dateFinal" id="prive.dateFinal" v-model="prive.dateFinal" required type="text" placeholder="Date final depot de candidature Exp. 21/02/2021" class="ring ring-gray-300 text-green-500 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-teal-300" />
                                                 <div v-if="hasErrors('prive.dateFinal')">
                                                     <p class="text-red-700">Entrer Date final.</p> 
                                                 </div>
@@ -148,13 +148,13 @@
                                             <div>
                                                 <label for="" class="text-sm">Adress mail pour cv</label>
 
-                                                <input name="prive.cvemail" id="prive.cvemail" v-model="prive.cvemail" required type="email" placeholder="Adress mail ou envoyer les cv" class="ring ring-gray-300 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-teal-300">
+                                                <input name="prive.cvemail" id="prive.cvemail" v-model="prive.cvemail" required type="email" placeholder="Adress mail ou envoyer les cv" class="ring ring-gray-300 text-green-500 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-teal-300">
                                                 <div v-if="hasErrors('prive.cvemail')">
                                                     <p class="text-red-700">Entrer pour envoie cv.</p> 
                                                 </div>
                                             </div>
 
-                                            <button @click="redirect" class="inline-block self-end bg-blue-700 text-white font rounded-lg px-6 py-2 uppercase ">Modifier</button>
+                                            <button @click="redirect" class="inline-block self-end bg-green-500 text-white font rounded-lg px-6 py-2 uppercase ">Modifier</button>
 
                                             <div v-if="success">
                                                  <p class="text-green-700">Bravo!!! votre anonce a ete creee voir click  <strong><a  class="text-bleu-500" href="/p/o">ici.</a></strong>. </p>

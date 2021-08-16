@@ -23,6 +23,12 @@
             Kaji
         </template>
 
+        <div class="mb-4 float-right">
+            <inertia-link :href="route('register')" class="ml-4 text-sm text-green-500 underline">
+                enregistrez-vous ici
+            </inertia-link>
+        </div>
+
         <jet-validation-errors class="mb-4" />
 
         <div v-if="status" class="mb-4 font-medium text-sm text-green-600">
