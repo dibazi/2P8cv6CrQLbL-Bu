@@ -2,7 +2,7 @@
 
 
        <!-- <h2 class="text-lg font-semibold leading-6" >{{ item.companyName }}</h2> -->
-        <p class="text-gray-600" > <strong>Anonce creer: </strong>{{ moment(item.created_at).format("DD/MM/YYYY") }}</p>
+        <p class="text-gray-600" > <strong>Anonce creer: </strong> le {{ moment(item.created_at).format("DD/MM/YYYY") }}</p>
         <h2>Detail sur la companie</h2>
         <p class="text-gray-600" > <strong>Companie nom: </strong>{{ item.companyName }}</p>
         <p class="text-gray-600" ><strong>Companie pays: </strong>{{ item.country }}</p>

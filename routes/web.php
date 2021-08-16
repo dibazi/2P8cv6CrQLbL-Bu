@@ -55,3 +55,6 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/edit/{id}/c', [CompanieCo
 Route::middleware(['auth:sanctum', 'verified'])->patch('/edit/{id}/p',[PriveeController::class, 'update'])->name('patch.privee');
 
 Route::middleware(['auth:sanctum', 'verified'])->patch('/edit/{id}/c',[CompanieController::class, 'update'])->name('patch.companie');
+
+Route::middleware(['auth:sanctum', 'verified'])->get('/', [CompanieController::class, 'index'])->name('companies');
+

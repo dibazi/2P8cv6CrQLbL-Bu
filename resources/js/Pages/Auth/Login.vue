@@ -1,5 +1,24 @@
 <template>
-    <jet-authentication-card>
+    <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center sm:pt-0">
+        <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
+                <inertia-link :href="route('register')" class="ml-4 text-sm text-gray-700 underline">
+                    S'enregistrer
+                </inertia-link>
+
+            <template>
+                <inertia-link :href="route('login')" class="text-sm text-gray-700 underline">
+                    Log in
+                </inertia-link>
+
+                <inertia-link :href="route('register')" class="ml-4 text-sm text-gray-700 underline">
+                    S'enregistrer
+                </inertia-link>
+            </template>
+        </div>
+
+        <div class="container">
+
+                <jet-authentication-card>
         <template #logo>
             Kaji
         </template>
@@ -39,6 +58,9 @@
             </div>
         </form>
     </jet-authentication-card>
+
+        </div>
+    </div>
 </template>
 
 <script>
@@ -62,6 +84,8 @@
         },
 
         props: {
+            canLogin: Boolean,
+            canRegister: Boolean,
             canResetPassword: Boolean,
             status: String
         },

@@ -10,7 +10,7 @@
                     <input v-model="term" @keyup="search"  name="" id="" type="text" placeholder="Recherche" required class="ring ring-gray-300 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-teal-300">
                 </div>
         </div>
-        </div>
+    </div>
 
         <viewlist :items="companies"
         v-on:reloadlist="getList()"/>

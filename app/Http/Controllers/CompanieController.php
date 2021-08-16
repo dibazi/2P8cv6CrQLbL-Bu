@@ -147,7 +147,7 @@ class CompanieController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Companie $job, $id)
+    public function update(Request $request, companie $job, $id)
     {
         //
         $updatePost = companie::find($id);
